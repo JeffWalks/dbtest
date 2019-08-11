@@ -1,5 +1,6 @@
 // MySQL to Google Spreadsheet By Pradeep Bheron
 // Support and contact at pradeepbheron.com
+// If you like my content, please consider buying me a coffee. Thank you for your support! https://www.buymeacoffee.com/yoursupport
 
 function myMySQLFetchData() { 
   
@@ -11,7 +12,7 @@ function myMySQLFetchData() {
   var rs = stmt.executeQuery('SELECT id,emp_name, emp_code FROM employee_details GROUP BY 1 LIMIT 1000'); // It sets the limit of the maximum nuber of rows in a ResultSet object
   
   //change table name as per your database structure
-   
+  // If you like my content, please consider buying me a coffee. Thank you for your support! https://www.buymeacoffee.com/yoursupport 
   var doc = SpreadsheetApp.getActiveSpreadsheet(); // Returns the currently active spreadsheet
   var cell = doc.getRange('a1');
   var row = 0;
@@ -35,3 +36,5 @@ function myMySQLFetchData() {
   var end = new Date(); // Get script ending time
   Logger.log('Time elapsed: ' + (end.getTime() - start.getTime())); // To generate script log. To view log click on View -> Logs.
 }
+
+// If you like my content, please consider buying me a coffee. Thank you for your support! https://www.buymeacoffee.com/yoursupport
