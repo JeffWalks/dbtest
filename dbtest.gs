@@ -6,12 +6,12 @@
 // Find detailed tutorial with screenshots here: https://medium.com/@ipradeep/pull-and-sync-data-between-google-doc-spreadsheet-and-mysql-1d5a09d787a4
 function myMySQLFetchData() { 
   
-  var conn = Jdbc.getConnection('jdbc:mysql://127.0.0.1:3306/employee_db', 'username', 'pass'); // Change it as per your database credentials
+  var conn = Jdbc.getConnection('jdbc:mysql://10.1.32.221:3306/woi_prod', 'tableau_philip', 'NjbOupd2tpOIYoIY'); // Change it as per your database credentials
 
   var stmt = conn.createStatement();
   var start = new Date(); // Get script starting time
   
-  var rs = stmt.executeQuery('SELECT id,emp_name, emp_code FROM employee_details GROUP BY 1 LIMIT 1000'); // It sets the limit of the maximum nuber of rows in a ResultSet object
+  var rs = stmt.executeQuery('SELECT * FROM `client_wish_lists`'); // It sets the limit of the maximum nuber of rows in a ResultSet object
   
   // Find detailed tutorial with screenshots here: https://medium.com/@ipradeep/pull-and-sync-data-between-google-doc-spreadsheet-and-mysql-1d5a09d787a4
   
